@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 1px; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#output, #output2 {
+  display: inline-block;
+  margin: 10px auto;
+}
+#output2 {
+  background-color: rgb(77, 74, 74);
+  color: rgb(241, 62, 62);
+  padding: 10px;
+  visibility: hidden;
+  border-radius: 10px;
+}
+#output {
+  background-color: rgb(91, 197, 240);
+  color: rgb(252, 252, 252);
+  padding: 10px;
+  visibility: hidden;
+  border-radius: 10px;
+}
+#myChart {
+  max-width: 400px;
+  margin: 0 auto;
+}
