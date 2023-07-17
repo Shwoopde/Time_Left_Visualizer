@@ -5,19 +5,71 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Time Left Visualizer</h1>
-    <form>
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"><br><br>
-        <label for="deathage">Age you think you will die:</label>
-        <input type="number" id="deathage" name="deathage"><br><br>
-        
-    </form>
-    <p id="output2"></p>
-    <p id="output"></p>
-    <canvas id="myChart"></canvas>
+    <div id="bar" class="bar">
+        <button id="minimize" class="minimize-btn">-</button>
+        <span id="title" class="bar-title">Time Left Visualizer</span>
+    </div>
+    <div id="container" class="container">
+        <h1>Time Left Visualizer</h1>
+        <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" class="form-style" name="birthday"><br><br>
+            <label for="deathage">Age you think you will die:</label>
+            <input type="number" id="deathage" class="form-style" name="deathage"><br><br>
+        </form>
+        <p id="output2" class="output2-style"></p>
+        <p id="output" class="output-style"></p>
+        <canvas id="myChart"></canvas>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+    <!-- New event_tracker_1 div -->
+    <div id="event_tracker_1">
+        <div id="bar2" class="bar">
+            <button id="minimize2" class="minimize-btn">-</button>
+            <!-- Set textContent of #title2 to value of event_title input field -->
+            <span id="title2" class="bar-title"></span>
+        </div>
+        <div id="container2" class="container">
+            <form>
+                <label for="event_title">Event Title:</label>
+                <input type="text" id="event_title" name="event_title"><br><br>
+
+                <label for="frequency">How often does this happen?</label><br><br>
+
+                <input type="number" id="frequency" class="form-style" name="frequency"><br><br>
+
+                <!-- Added select element with options for week, month, and year -->
+                <label for= "per">Per:</label> 
+                <select name= "per" id= "per">
+                    <option value= "Week">Week</option>
+                    <option value= "Month">Month</option>
+                    <option value= "Year">Year</option> 
+                </select><br><br>
+
+                <label for="start_date">Start Date:</label>
+                <input type="date" id="start_date" class="form-style" name="start_date"><br><br>
+
+                <label for="end_date">End Date:</label>
+                <input type="date" id="end_date" class="form-style" name="end_date"><br><br>
+
+            </form>
+
+            <!-- Output for event tracker -->
+            <div class="event-output">
+                <p id= "output3" class="output2-style"></p>
+                <p id= "output4" class="output-style"></p>
+            </div>
+
+            <!-- Pie chart for event tracker -->
+            <canvas id= "myChart2"></canvas>
+        </div>
+    </div>
+
+    <!-- End of new event_tracker_1 div -->
+
+    <!-- Scripts -->
+    <script src= "https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src= "script.js"></script>
+
 </body>
-</html>
+</html> 
