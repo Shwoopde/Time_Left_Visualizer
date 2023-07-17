@@ -4,25 +4,73 @@ body {
   letter-spacing: 1px; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#output, #output2 {
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: solid black;
+}
+.container {
+  border: solid black;
+}
+.output, .output2 {
   display: inline-block;
   margin: 10px auto;
 }
-#output2 {
-  background-color: rgb(77, 74, 74);
-  color: rgb(241, 62, 62);
+.output2 {
+  background-color: rgb(77,74,74);
+  color: rgb(241,62,62);
   padding: 10px;
   visibility: hidden;
   border-radius: 10px;
 }
-#output {
-  background-color: rgb(91, 197, 240);
-  color: rgb(252, 252, 252);
+.output {
+  background-color: rgb(91,197,240);
+  color: rgb(252,252,252);
   padding: 10px;
   visibility: hidden;
   border-radius: 10px;
 }
-#myChart {
-  max-width: 400px;
-  margin: 0 auto;
+#myChart, #myChart2 {
+    max-width:400px;
+    margin:0 auto;
+}
+
+/* New CSS for #output3 and #output4 */
+.output3 {
+    background-color: rgb(77,74,74);
+    color: white;
+    padding:10px;
+    visibility:hidden;
+    border-radius:10px;
+}
+
+.output4 {
+    background-color: rgb(91,197,240);
+    color:white;
+    padding:10px;
+    visibility:hidden;
+    border-radius:10px;
+}
+
+.form-style {
+    margin-bottom:5px; 
+}
+
+.minimize-btn {
+    cursor:pointer; 
+}
+
+.bar-title {
+    font-weight:bold; 
+}
+
+.event-output {
+    display:flex; 
+    justify-content:center; 
+}
+
+.event-output p {
+    margin-right:5px; 
 }
